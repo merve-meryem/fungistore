@@ -31,12 +31,12 @@ export default function SignIn({ onSignIn }) {
 
   return (
     <div className="text-xl flex flex-col items-center justify-center my-20">
-      <h2 className="text-2xl text-lime-700">Sign In</h2>
+      <h2 className="text-2xl text-lime-700">Giriş Yap</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col items-center my-2 "
       >
-        <label>Email</label>
+        <label>Email Adresiniz:</label>
         <input
           className="border w-100 my-2"
           type="email"
@@ -45,7 +45,7 @@ export default function SignIn({ onSignIn }) {
         />
         {errors.email && <p>{errors.email.message}</p>}
 
-        <label>Password</label>
+        <label>Şifreniz:</label>
         <input
           type="password"
           className="border w-100 my-2"

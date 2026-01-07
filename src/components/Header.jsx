@@ -3,7 +3,7 @@ import images from "../images/images.jpeg";
 import { CiLight } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
 import { LuShoppingBasket } from "react-icons/lu";
-import Navlink from "./Navlink";
+import Navlink from "./NavLink";
 import { NavLink, useNavigate } from "react-router";
 import { useCart } from "../context/CartContext";
 import mushroomdata from "../../mushroomdata";
@@ -20,8 +20,8 @@ const links = [
 function Header() {
   const { cart } = useCart();
   const navigate = useNavigate();
- const { logout,user } = useAuth();
- 
+  const { logout, user } = useAuth();
+
   const handleLogout = () => {
     logout();
     navigate("/");
@@ -39,11 +39,10 @@ function Header() {
           onClick={() => navigate("/")}
           className="text-3xl cursor-pointer text-lime-500"
         >
-          
           🍄 Fungi Store
         </h1>
 
-          <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center">
           {user?.email ? (
             <div className="">
               <p className="text-lime-500">Hoşgeldiniz</p>
@@ -64,12 +63,11 @@ function Header() {
           )}
 
           <div>
-            
             <button
               onClick={() => navigate("/cart")}
               className="ml-2 bg-yellow-200 text-green-700 rounded-full p-1 text-md"
             >
-             🛒 {cart.length}
+              🛒 {cart.length}
             </button>
           </div>
         </div>

@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import Cart from "./components/Cart";
 import KayıtOl from "./pages/KayıtOl";
 import Success from "./pages/Success";
+import Footer from "./pages/Footer";
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/login" element={<KayıtOl />} />
           <Route path="/success" element={<Success />} />
         </Routes>
+        <Footer />
       </PageContainer>
     </div>
   );

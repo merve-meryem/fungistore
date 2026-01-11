@@ -14,7 +14,7 @@ export default function Anasayfa() {
   return (
     <>
       <div>
-        <h1 className="flex flex-row justify-center items-center text-4xl font-bold mt-10 text-lime-500">
+        <h1 className="flex flex-row justify-center items-center text-xl font-bold mt-10 text-lime-500 sm:text-4xl">
           Fungi Store'a Hoşgeldiniz...
         </h1>
         <div className="flex flex-row justify-center items-center mt-10">

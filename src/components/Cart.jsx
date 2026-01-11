@@ -25,8 +25,8 @@ const Cart = () => {
 
   return (
     <div>
-      <h2 className="text-4xl text-lime-500 p-5">Siparişlerim:</h2>
-      <div className="border w-300 h-70 border-amber-400">
+      <h2 className="text-xl sm:text-4xl text-lime-500 p-5">Siparişlerim:</h2>
+      <div className="border h-70 border-amber-400">
         {cart.length === 0 && (
           <p className="flex flex-row text-xl p-5 text-red-500 justify-center">
             Sepetiniz Boş!!
@@ -52,7 +52,7 @@ const Cart = () => {
         <p className="text-2xl text-lime-500">Notlar</p>
         <textarea
           type="text"
-          className="row-3  w-300 h-20 border border-amber-500"
+          className="row-3 w-full h-20 border border-amber-500"
         ></textarea>
       </div>
       <div className="p-5 text-3xl text-amber-600 flex flex-row justify-between">

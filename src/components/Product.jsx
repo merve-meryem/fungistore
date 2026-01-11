@@ -32,7 +32,7 @@ export default function ({ mushroom }) {
           </CardText>
           <Button
             onClick={() => addToCart(mushroom)}
-            className="border border-amber-200 p-1 text-xs bg-amber-100"
+            className="border border-amber-200 p-1 text-xs bg-amber-200"
           >
             Sepete Ekle
           </Button>

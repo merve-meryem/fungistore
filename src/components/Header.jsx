@@ -12,7 +12,7 @@ import { useAuth } from "../context/AuthContext";
 
 const links = [
   { url: "/", title: "Anasayfa" },
-  { url: "/hakkımızda", title: "Hakkımızda" },
+  { url: "/hakkimizda", title: "Hakkımızda" },
   { url: "/siparis", title: "Sipariş Ver" },
   { url: "/cart", title: "Sepet" },
 ];

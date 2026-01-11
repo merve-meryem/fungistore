@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Anasayfa />} />
-          <Route path="/hakkımızda" element={<Hakkımızda />} />
+          <Route path="/hakkimizda" element={<Hakkımızda />} />
           <Route path="/siparis" element={<Siparis />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<KayıtOl />} />

@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 function PageContainer({ children }) {
   return (
     <div>
-      <Container maxWidth="lg" className="relative pt-40 pb-20 bg-amber-100">
+      <Container maxWidth="lg" className="relative pt-40 pb-20 bg-yellow-50">
         {children}
       </Container>
     </div>

@@ -28,12 +28,12 @@ function Header() {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-green-50 z-10 shadow-lg">
+    <div className="fixed top-0 left-0 w-full bg-green-50 z-10 shadow-lg border-b-2 border-amber-200">
       <div className="flex flex-row justify-between items-center p-4">
         <img
           onClick={() => navigate("/")}
           src={images}
-          className="w-10 h-10 sm:w-20 sm:h-20 cursor-pointer"
+          className="w-14 sm:w-20 cursor-pointer"
         />
         <h1
           onClick={() => navigate("/")}
@@ -42,7 +42,7 @@ function Header() {
           🍄 Fungi Store
         </h1>
 
-        <div className="flex flex-row items-center text-xs sm:text-xl">
+        <div className="flex flex-row items-center text-sm sm:text-xl">
           {user?.email ? (
             <div className="">
               <p className="text-lime-500">Hoşgeldiniz</p>
